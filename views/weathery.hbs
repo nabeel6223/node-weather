@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel = "icon" href ="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather03-512.png" type = "image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weathery</title>
+    </head>
+    <body>
+        <style>
+           body{
+               height:100%;
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-image: url(https://openweathermap.org/themes/openweathermap/assets/img/new-history-forecast-bulk.png);
+           }
+           .inp{
+               height: 39px;
+               width: 32%;
+           }
+           .fnt0{
+            font-family: 'Open Sans', sans-serif;
+              font-weight: 500;
+              font-size: 50px;;
+           }
+          .fnt{
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 900;
+          }
+          img{
+              width: 90px;
+              height: 90px;
+          }
+          .res{
+              font-size:35px;;
+          }
+        </style>
+  <div class="container">  
+<h1 class="display-1 mt-4 text-primary fnt">Weathery
+    <img src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather03-512.png" alt="">
+</h1>
+<h1 class="display-4 text-warning mt-1 ml-2 border-bottom border-warning w-50">Your forecast friend</h1>
+<div class="mt-5">
+    <span class="display-4 text-secondary fnt0 mr-4 ">Enter the place</span>
+   <input class="mt-2 inp d-inline" type="text">
+   <button>GO</button>
+   <div>
+       <h1 class="display-4 res mt-5"></h1>
+   </div>
+</div>
+    </div>
+    <script src="/js/weather-app.js"></script>
+    </body>
+</html>
